@@ -39,13 +39,30 @@
                                     <action selector="gotoEmojiDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D7b-Ty-ryV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9r7-Cd-hbG">
+                                <rect key="frame" x="20" y="476" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="6Lz-Bn-T6R"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="s8M-zk-8aO"/>
+                                    <constraint firstAttribute="height" constant="44" id="xO6-KV-R1K"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="zEN-Gd-clp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="语音"/>
+                                <connections>
+                                    <action selector="gotoSpeech:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQ4-e5-Esu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="mbF-1c-Y5u" firstAttribute="top" secondItem="rYA-9h-Bj4" secondAttribute="bottom" constant="100" id="4KH-td-aBa"/>
+                            <constraint firstItem="9r7-Cd-hbG" firstAttribute="top" secondItem="mbF-1c-Y5u" secondAttribute="bottom" constant="100" id="4R8-WD-TXU"/>
                             <constraint firstItem="rYA-9h-Bj4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OSk-4g-Jox"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rYA-9h-Bj4" secondAttribute="trailing" constant="20" id="VJg-Qg-2i6"/>
                             <constraint firstItem="rYA-9h-Bj4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="gEj-Ph-PS3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9r7-Cd-hbG" secondAttribute="trailing" constant="20" id="qJR-a1-mSY"/>
+                            <constraint firstItem="9r7-Cd-hbG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="skN-4Z-hmb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mbF-1c-Y5u" secondAttribute="trailing" constant="20" id="wuu-iL-3yb"/>
                             <constraint firstItem="mbF-1c-Y5u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yoK-kZ-Isf"/>
                         </constraints>
@@ -148,15 +165,33 @@
                                     <action selector="gotoSkinDetail:" destination="shQ-sS-Yg7" eventType="touchUpInside" id="urh-Uw-7DI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6q-Tt-Bz9">
+                                <rect key="frame" x="20" y="476" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="2hj-ln-09t"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="55U-qn-Uw3"/>
+                                    <constraint firstAttribute="height" constant="44" id="bxD-TD-PL7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="dI3-lI-CUw"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="vg9-AJ-fyf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="语音"/>
+                                <connections>
+                                    <action selector="gotoSpeech:" destination="shQ-sS-Yg7" eventType="touchUpInside" id="rBK-eG-Qn8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="TIL-Ed-O7X" firstAttribute="trailing" secondItem="J36-hI-afu" secondAttribute="trailing" constant="20" id="6PY-Xn-ag0"/>
+                            <constraint firstItem="u6q-Tt-Bz9" firstAttribute="leading" secondItem="TIL-Ed-O7X" secondAttribute="leading" constant="20" id="9Dz-zN-sZ6"/>
                             <constraint firstItem="J36-hI-afu" firstAttribute="leading" secondItem="TIL-Ed-O7X" secondAttribute="leading" constant="20" id="DaP-2f-842"/>
+                            <constraint firstItem="u6q-Tt-Bz9" firstAttribute="top" secondItem="YJa-t8-1Dl" secondAttribute="bottom" constant="100" id="FJN-A0-DPH"/>
                             <constraint firstItem="YJa-t8-1Dl" firstAttribute="top" secondItem="J36-hI-afu" secondAttribute="bottom" constant="100" id="LSQ-TW-JOk"/>
                             <constraint firstItem="J36-hI-afu" firstAttribute="top" secondItem="TIL-Ed-O7X" secondAttribute="top" constant="100" id="dum-up-VlF"/>
                             <constraint firstItem="YJa-t8-1Dl" firstAttribute="leading" secondItem="TIL-Ed-O7X" secondAttribute="leading" constant="20" id="lxF-J4-dUJ"/>
                             <constraint firstItem="TIL-Ed-O7X" firstAttribute="trailing" secondItem="YJa-t8-1Dl" secondAttribute="trailing" constant="20" id="mEO-N2-fB9"/>
+                            <constraint firstItem="u6q-Tt-Bz9" firstAttribute="trailing" secondItem="TIL-Ed-O7X" secondAttribute="trailing" constant="-20" id="w6u-2F-sBH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TIL-Ed-O7X"/>
                     </view>

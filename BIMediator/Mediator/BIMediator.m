@@ -13,8 +13,6 @@
 
 @interface BIMediator ()
 
-@property (nonatomic, strong) NSMutableDictionary *cachedTarget;
-
 @end
 
 @implementation BIMediator
@@ -30,7 +28,7 @@
 
 // 外部App调用入口  scheme://[target]/[action]?[params]
 - (id)performActionWithUrl:(NSURL *)url {
-    if (url == nil) {
+    if (!url) {
         return nil;
     }
     
@@ -64,35 +62,30 @@
     id target = [[targetClass alloc] init];
     SEL action = NSSelectorFromString(actionString);
     
-    // 使用缓存
-//    NSObject *target = self.cachedTarget[targetClassString];
-//    if (!target) {
-//        Class targetClass = NSClassFromString(targetClassString);
-//        target = [[targetClass alloc] init];
-//    }
-    
-//    if (YES) {
-//        self.cachedTarget[targetClassString] = target;
-//    }
-    
     if (!target) {
         NSLog(@"%@模块对应的%@文件没有找到，需要调用的方法：%@,请检查是否正确引入对应的模块！", targetName, targetClassString, actionString);
         return nil;
     }
     
     if ([target respondsToSelector:action]) { // 正常调用
+        
         return [target performSelector:action withObject:params];
+        
     } else {
         // 这里是处理无响应请求的地方，如果无响应，则尝试调用对应target的notFound方法统一处理
         SEL action = NSSelectorFromString(@"notFound:");
+        
         if ([target respondsToSelector:action]) {
+            
             return [target performSelector:action withObject:params];
+            
         } else {
             NSLog(@"%@模块对应的%@文件没有找到，需要调用的方法：%@,请检查是否正确引入对应的模块！", targetName, targetClassString, actionString);
             return nil;
         }
     }
 }
+
 
 @end
 

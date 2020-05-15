@@ -16,17 +16,19 @@ NS_ASSUME_NONNULL_BEGIN
 // 皮肤详情页
 - (UIViewController *)mediator_skinDetailControllerWithParams:(NSDictionary *)params;
 
-/*
-- (void)mediator_showAlertWithMessage:(NSString *)message
-                         cancelAction:(void(^)(NSDictionary *info))cancelAction
-                        confirmAction:(void(^)(NSDictionary *info))confirmAction;
 
+/*
+- (UITableViewCell *)mediator_skinCellWithParams:(NSDictionary *)params;
+ 
 - (void)mediator_presentImage:(UIImage *)image;
- */
+ 
+- (void)mediator_showAlertWithMessage:(NSString *)message
+                           completion:(void(^)(NSDictionary *info))completion;
+
+*/
 
 // 未必一定以分类的形式，只是为了方便调用performTarget方法
 
-// 重用之前的实例
 
 @end
 

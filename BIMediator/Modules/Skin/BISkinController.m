@@ -13,6 +13,7 @@
 #import "BISkinDetailController.h"
 #import "BITabBarController.h"
 #import "BIAdapterManager.h"
+#import "BIMediator+Speech.h"
 
 @interface BISkinController ()
 
@@ -26,16 +27,24 @@
 }
 
 - (IBAction)gotoSkinDetail:(id)sender {
+    //    BISkinDetailController *destVC = [[BISkinDetailController alloc] init];
+    //    [self.navigationController pushViewController:destVC animated:YES];
+    
     UIViewController *destVC = [[BIMediator sharedInstance] mediator_skinDetailControllerWithParams:@{}];
-//    BISkinDetailController *destVC = [[BISkinDetailController alloc] init];
-//    [self.navigationController pushViewController:destVC animated:YES];
     [[BIAdapterManager currentNavigationService] pushVC:destVC animated:YES];
 }
 
 - (IBAction)gotoEmojiDetail:(id)sender {
-    UIViewController *destVC = [[BIMediator sharedInstance] mediator_emojiDetailControllerWithParams:@{}];
+    UIViewController *destVC = [[BIMediator sharedInstance] mediator_emojiDetailControllerWithParams:@{} completion:^{
+        NSLog(@"completion");
+    }];
     self.tabBarController.selectedIndex = 1;
     [[BIAdapterManager currentNavigationService] pushVC:destVC animated:YES];
+}
+
+- (IBAction)gotoSpeech:(id)sender {
+    UIViewController *speechVc = [[BIMediator sharedInstance] mediator_speechControllerWithParams:@{@"test" : @"just a test"} reuse:YES];
+    [[BIAdapterManager currentNavigationService] pushVC:speechVc animated:YES];
 }
 
 @end

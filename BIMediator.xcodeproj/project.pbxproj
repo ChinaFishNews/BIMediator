@@ -24,6 +24,10 @@
 		73728D33246D4648007509F7 /* BITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D32246D4648007509F7 /* BITabBarController.m */; };
 		73728D3A246D4E31007509F7 /* BINavigatorImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D36246D4E30007509F7 /* BINavigatorImp.m */; };
 		73728D3B246D4E31007509F7 /* BIAdapterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D37246D4E30007509F7 /* BIAdapterManager.m */; };
+		737BB71C246E676100F0DE08 /* BISpeechController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737BB71B246E676100F0DE08 /* BISpeechController.m */; };
+		737BB71F246E6AEA00F0DE08 /* Target_Speech.m in Sources */ = {isa = PBXBuildFile; fileRef = 737BB71E246E6AEA00F0DE08 /* Target_Speech.m */; };
+		737BB722246E6EA700F0DE08 /* BIMediator+Speech.m in Sources */ = {isa = PBXBuildFile; fileRef = 737BB721246E6EA700F0DE08 /* BIMediator+Speech.m */; };
+		737BB725246E78BC00F0DE08 /* BISpeechReusePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 737BB724246E78BC00F0DE08 /* BISpeechReusePool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +64,14 @@
 		73728D37246D4E30007509F7 /* BIAdapterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIAdapterManager.m; sourceTree = "<group>"; };
 		73728D38246D4E30007509F7 /* BINavigatorImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BINavigatorImp.h; sourceTree = "<group>"; };
 		73728D39246D4E30007509F7 /* BINavigatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BINavigatorProtocol.h; sourceTree = "<group>"; };
+		737BB71A246E676100F0DE08 /* BISpeechController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BISpeechController.h; sourceTree = "<group>"; };
+		737BB71B246E676100F0DE08 /* BISpeechController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BISpeechController.m; sourceTree = "<group>"; };
+		737BB71D246E6AEA00F0DE08 /* Target_Speech.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Speech.h; sourceTree = "<group>"; };
+		737BB71E246E6AEA00F0DE08 /* Target_Speech.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Speech.m; sourceTree = "<group>"; };
+		737BB720246E6EA700F0DE08 /* BIMediator+Speech.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BIMediator+Speech.h"; sourceTree = "<group>"; };
+		737BB721246E6EA700F0DE08 /* BIMediator+Speech.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BIMediator+Speech.m"; sourceTree = "<group>"; };
+		737BB723246E78BC00F0DE08 /* BISpeechReusePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BISpeechReusePool.h; sourceTree = "<group>"; };
+		737BB724246E78BC00F0DE08 /* BISpeechReusePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BISpeechReusePool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,8 @@
 				73728D1A246D329C007509F7 /* BIMediator+Skin.m */,
 				73728D1C246D32A8007509F7 /* BIMediator+Emoji.h */,
 				73728D1D246D32A8007509F7 /* BIMediator+Emoji.m */,
+				737BB720246E6EA700F0DE08 /* BIMediator+Speech.h */,
+				737BB721246E6EA700F0DE08 /* BIMediator+Speech.m */,
 				73728D34246D4E09007509F7 /* NavigationImp */,
 			);
 			path = Mediator;
@@ -124,6 +138,7 @@
 		73728D0B246D2AC7007509F7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				737BB719246E673D00F0DE08 /* Speech */,
 				73728D0C246D2AC7007509F7 /* Skin */,
 				73728D0D246D2AC7007509F7 /* Emoji */,
 			);
@@ -166,6 +181,19 @@
 				73728D39246D4E30007509F7 /* BINavigatorProtocol.h */,
 			);
 			path = NavigationImp;
+			sourceTree = "<group>";
+		};
+		737BB719246E673D00F0DE08 /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				737BB71A246E676100F0DE08 /* BISpeechController.h */,
+				737BB71B246E676100F0DE08 /* BISpeechController.m */,
+				737BB723246E78BC00F0DE08 /* BISpeechReusePool.h */,
+				737BB724246E78BC00F0DE08 /* BISpeechReusePool.m */,
+				737BB71D246E6AEA00F0DE08 /* Target_Speech.h */,
+				737BB71E246E6AEA00F0DE08 /* Target_Speech.m */,
+			);
+			path = Speech;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73728D2D246D3E01007509F7 /* BISkinController.m in Sources */,
+				737BB722246E6EA700F0DE08 /* BIMediator+Speech.m in Sources */,
 				73728D27246D351B007509F7 /* BISkinDetailController.m in Sources */,
 				73728D3A246D4E31007509F7 /* BINavigatorImp.m in Sources */,
 				73728D33246D4648007509F7 /* BITabBarController.m in Sources */,
@@ -246,6 +275,9 @@
 				73728CEE246D2794007509F7 /* AppDelegate.m in Sources */,
 				73728D24246D3466007509F7 /* Target_Emoji.m in Sources */,
 				73728CFF246D279A007509F7 /* main.m in Sources */,
+				737BB725246E78BC00F0DE08 /* BISpeechReusePool.m in Sources */,
+				737BB71F246E6AEA00F0DE08 /* Target_Speech.m in Sources */,
+				737BB71C246E676100F0DE08 /* BISpeechController.m in Sources */,
 				73728D2A246D364B007509F7 /* BIEmojiDetailController.m in Sources */,
 				73728D21246D3451007509F7 /* Target_Skin.m in Sources */,
 				73728D1E246D32A8007509F7 /* BIMediator+Emoji.m in Sources */,

@@ -14,7 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BIMediator (Emoji)
 
 // 表情详情页
-- (UIViewController *)mediator_emojiDetailControllerWithParams:(NSDictionary *)params;
+- (UIViewController *)mediator_emojiDetailControllerWithParams:(NSDictionary *)params
+                                                    completion:(void(^)(void))completion;
 
 @end
 

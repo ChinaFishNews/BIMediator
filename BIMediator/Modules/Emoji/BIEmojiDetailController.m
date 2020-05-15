@@ -18,6 +18,9 @@
     [super viewDidLoad];
     self.title = @"EmojiDetail";
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    void(^completion)(void) = self.postParams[@"completion"];
+    completion();
 }
 
 

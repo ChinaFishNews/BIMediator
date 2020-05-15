@@ -13,10 +13,14 @@ NSString *const kBIMediatorActionEmojiDetail = @"BIEmojiDetailController";
 
 @implementation BIMediator (Emoji)
 
-- (UIViewController *)mediator_emojiDetailControllerWithParams:(NSDictionary *)params {
+- (UIViewController *)mediator_emojiDetailControllerWithParams:(NSDictionary *)params
+                                                    completion:(void(^)(void))completion {
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithDictionary:params];
+    dict[@"completion"] = completion;
+    
     UIViewController *viewController = [self performTarget:kBIMediatorTargetEmoji
                                                     action:kBIMediatorActionEmojiDetail
-                                                    params:params];
+                                                    params:dict];
     
     if ([viewController isKindOfClass:[UIViewController class]]) {
         return viewController;

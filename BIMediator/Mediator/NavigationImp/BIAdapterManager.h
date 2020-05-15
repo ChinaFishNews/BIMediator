@@ -4,7 +4,7 @@
 //
 //  Created by xinwen on 2020/5/14.
 //  Copyright © 2020 baidu. All rights reserved.
-//  导航
+//  导航服务
 
 #import <Foundation/Foundation.h>
 #import "BINavigatorProtocol.h"
