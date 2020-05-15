@@ -1,5 +1,5 @@
 //
-//  SceneDelegate.h
+//  BIEmojiController.h
 //  BIMediator
 //
 //  Created by xinwen on 2020/5/14.
@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+@interface BIEmojiController : UIViewController
 
-@property (strong, nonatomic) UIWindow * window;
+@property (nonatomic, copy) NSDictionary *postParams;
 
 @end
 

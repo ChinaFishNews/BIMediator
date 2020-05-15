@@ -8,27 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		73728CEE246D2794007509F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728CED246D2794007509F7 /* AppDelegate.m */; };
-		73728CF1246D2794007509F7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728CF0246D2794007509F7 /* SceneDelegate.m */; };
-		73728CF4246D2794007509F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728CF3246D2794007509F7 /* ViewController.m */; };
 		73728CF7246D2794007509F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73728CF5246D2794007509F7 /* Main.storyboard */; };
 		73728CF9246D279A007509F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73728CF8246D279A007509F7 /* Assets.xcassets */; };
 		73728CFC246D279A007509F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73728CFA246D279A007509F7 /* LaunchScreen.storyboard */; };
 		73728CFF246D279A007509F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728CFE246D279A007509F7 /* main.m */; };
+		73728D10246D2AF5007509F7 /* BIMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D0F246D2AF5007509F7 /* BIMediator.m */; };
+		73728D1B246D329C007509F7 /* BIMediator+Skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D1A246D329C007509F7 /* BIMediator+Skin.m */; };
+		73728D1E246D32A8007509F7 /* BIMediator+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D1D246D32A8007509F7 /* BIMediator+Emoji.m */; };
+		73728D21246D3451007509F7 /* Target_Skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D20246D3451007509F7 /* Target_Skin.m */; };
+		73728D24246D3466007509F7 /* Target_Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D23246D3466007509F7 /* Target_Emoji.m */; };
+		73728D27246D351B007509F7 /* BISkinDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D26246D351B007509F7 /* BISkinDetailController.m */; };
+		73728D2A246D364B007509F7 /* BIEmojiDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D29246D364B007509F7 /* BIEmojiDetailController.m */; };
+		73728D2D246D3E01007509F7 /* BISkinController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D2C246D3E01007509F7 /* BISkinController.m */; };
+		73728D30246D3E94007509F7 /* BIEmojiController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D2F246D3E94007509F7 /* BIEmojiController.m */; };
+		73728D33246D4648007509F7 /* BITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D32246D4648007509F7 /* BITabBarController.m */; };
+		73728D3A246D4E31007509F7 /* BINavigatorImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D36246D4E30007509F7 /* BINavigatorImp.m */; };
+		73728D3B246D4E31007509F7 /* BIAdapterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 73728D37246D4E30007509F7 /* BIAdapterManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73728CE9246D2794007509F7 /* BIMediator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BIMediator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73728CEC246D2794007509F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		73728CED246D2794007509F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		73728CEF246D2794007509F7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		73728CF0246D2794007509F7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		73728CF2246D2794007509F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		73728CF3246D2794007509F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		73728CF6246D2794007509F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73728CF8246D279A007509F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73728CFB246D279A007509F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73728CFD246D279A007509F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73728CFE246D279A007509F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		73728D0E246D2AF5007509F7 /* BIMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIMediator.h; sourceTree = "<group>"; };
+		73728D0F246D2AF5007509F7 /* BIMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIMediator.m; sourceTree = "<group>"; };
+		73728D19246D329C007509F7 /* BIMediator+Skin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BIMediator+Skin.h"; sourceTree = "<group>"; };
+		73728D1A246D329C007509F7 /* BIMediator+Skin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BIMediator+Skin.m"; sourceTree = "<group>"; };
+		73728D1C246D32A8007509F7 /* BIMediator+Emoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BIMediator+Emoji.h"; sourceTree = "<group>"; };
+		73728D1D246D32A8007509F7 /* BIMediator+Emoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BIMediator+Emoji.m"; sourceTree = "<group>"; };
+		73728D1F246D3451007509F7 /* Target_Skin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Skin.h; sourceTree = "<group>"; };
+		73728D20246D3451007509F7 /* Target_Skin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Skin.m; sourceTree = "<group>"; };
+		73728D22246D3466007509F7 /* Target_Emoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Emoji.h; sourceTree = "<group>"; };
+		73728D23246D3466007509F7 /* Target_Emoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Emoji.m; sourceTree = "<group>"; };
+		73728D25246D351B007509F7 /* BISkinDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BISkinDetailController.h; sourceTree = "<group>"; };
+		73728D26246D351B007509F7 /* BISkinDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BISkinDetailController.m; sourceTree = "<group>"; };
+		73728D28246D364B007509F7 /* BIEmojiDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIEmojiDetailController.h; sourceTree = "<group>"; };
+		73728D29246D364B007509F7 /* BIEmojiDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIEmojiDetailController.m; sourceTree = "<group>"; };
+		73728D2B246D3E01007509F7 /* BISkinController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BISkinController.h; sourceTree = "<group>"; };
+		73728D2C246D3E01007509F7 /* BISkinController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BISkinController.m; sourceTree = "<group>"; };
+		73728D2E246D3E94007509F7 /* BIEmojiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIEmojiController.h; sourceTree = "<group>"; };
+		73728D2F246D3E94007509F7 /* BIEmojiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIEmojiController.m; sourceTree = "<group>"; };
+		73728D31246D4648007509F7 /* BITabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BITabBarController.h; sourceTree = "<group>"; };
+		73728D32246D4648007509F7 /* BITabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BITabBarController.m; sourceTree = "<group>"; };
+		73728D35246D4E30007509F7 /* BIAdapterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIAdapterManager.h; sourceTree = "<group>"; };
+		73728D36246D4E30007509F7 /* BINavigatorImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BINavigatorImp.m; sourceTree = "<group>"; };
+		73728D37246D4E30007509F7 /* BIAdapterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIAdapterManager.m; sourceTree = "<group>"; };
+		73728D38246D4E30007509F7 /* BINavigatorImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BINavigatorImp.h; sourceTree = "<group>"; };
+		73728D39246D4E30007509F7 /* BINavigatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BINavigatorProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +94,10 @@
 			children = (
 				73728CEC246D2794007509F7 /* AppDelegate.h */,
 				73728CED246D2794007509F7 /* AppDelegate.m */,
-				73728CEF246D2794007509F7 /* SceneDelegate.h */,
-				73728CF0246D2794007509F7 /* SceneDelegate.m */,
-				73728CF2246D2794007509F7 /* ViewController.h */,
-				73728CF3246D2794007509F7 /* ViewController.m */,
+				73728D31246D4648007509F7 /* BITabBarController.h */,
+				73728D32246D4648007509F7 /* BITabBarController.m */,
+				73728D0B246D2AC7007509F7 /* Modules */,
+				73728D0A246D2A92007509F7 /* Mediator */,
 				73728CF5246D2794007509F7 /* Main.storyboard */,
 				73728CF8246D279A007509F7 /* Assets.xcassets */,
 				73728CFA246D279A007509F7 /* LaunchScreen.storyboard */,
@@ -74,6 +105,67 @@
 				73728CFE246D279A007509F7 /* main.m */,
 			);
 			path = BIMediator;
+			sourceTree = "<group>";
+		};
+		73728D0A246D2A92007509F7 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				73728D0E246D2AF5007509F7 /* BIMediator.h */,
+				73728D0F246D2AF5007509F7 /* BIMediator.m */,
+				73728D19246D329C007509F7 /* BIMediator+Skin.h */,
+				73728D1A246D329C007509F7 /* BIMediator+Skin.m */,
+				73728D1C246D32A8007509F7 /* BIMediator+Emoji.h */,
+				73728D1D246D32A8007509F7 /* BIMediator+Emoji.m */,
+				73728D34246D4E09007509F7 /* NavigationImp */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		73728D0B246D2AC7007509F7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				73728D0C246D2AC7007509F7 /* Skin */,
+				73728D0D246D2AC7007509F7 /* Emoji */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		73728D0C246D2AC7007509F7 /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+				73728D2B246D3E01007509F7 /* BISkinController.h */,
+				73728D2C246D3E01007509F7 /* BISkinController.m */,
+				73728D25246D351B007509F7 /* BISkinDetailController.h */,
+				73728D26246D351B007509F7 /* BISkinDetailController.m */,
+				73728D1F246D3451007509F7 /* Target_Skin.h */,
+				73728D20246D3451007509F7 /* Target_Skin.m */,
+			);
+			path = Skin;
+			sourceTree = "<group>";
+		};
+		73728D0D246D2AC7007509F7 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				73728D2E246D3E94007509F7 /* BIEmojiController.h */,
+				73728D2F246D3E94007509F7 /* BIEmojiController.m */,
+				73728D28246D364B007509F7 /* BIEmojiDetailController.h */,
+				73728D29246D364B007509F7 /* BIEmojiDetailController.m */,
+				73728D22246D3466007509F7 /* Target_Emoji.h */,
+				73728D23246D3466007509F7 /* Target_Emoji.m */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
+		73728D34246D4E09007509F7 /* NavigationImp */ = {
+			isa = PBXGroup;
+			children = (
+				73728D35246D4E30007509F7 /* BIAdapterManager.h */,
+				73728D37246D4E30007509F7 /* BIAdapterManager.m */,
+				73728D38246D4E30007509F7 /* BINavigatorImp.h */,
+				73728D36246D4E30007509F7 /* BINavigatorImp.m */,
+				73728D39246D4E30007509F7 /* BINavigatorProtocol.h */,
+			);
+			path = NavigationImp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +238,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73728CF4246D2794007509F7 /* ViewController.m in Sources */,
+				73728D2D246D3E01007509F7 /* BISkinController.m in Sources */,
+				73728D27246D351B007509F7 /* BISkinDetailController.m in Sources */,
+				73728D3A246D4E31007509F7 /* BINavigatorImp.m in Sources */,
+				73728D33246D4648007509F7 /* BITabBarController.m in Sources */,
+				73728D1B246D329C007509F7 /* BIMediator+Skin.m in Sources */,
 				73728CEE246D2794007509F7 /* AppDelegate.m in Sources */,
+				73728D24246D3466007509F7 /* Target_Emoji.m in Sources */,
 				73728CFF246D279A007509F7 /* main.m in Sources */,
-				73728CF1246D2794007509F7 /* SceneDelegate.m in Sources */,
+				73728D2A246D364B007509F7 /* BIEmojiDetailController.m in Sources */,
+				73728D21246D3451007509F7 /* Target_Skin.m in Sources */,
+				73728D1E246D32A8007509F7 /* BIMediator+Emoji.m in Sources */,
+				73728D30246D3E94007509F7 /* BIEmojiController.m in Sources */,
+				73728D3B246D4E31007509F7 /* BIAdapterManager.m in Sources */,
+				73728D10246D2AF5007509F7 /* BIMediator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

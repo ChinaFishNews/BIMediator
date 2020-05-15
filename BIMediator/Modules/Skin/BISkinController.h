@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BISkinController.h
 //  BIMediator
 //
 //  Created by xinwen on 2020/5/14.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface BISkinController : UIViewController
 
+@property (nonatomic, copy) NSDictionary *postParams;
 
 @end
 
