@@ -14,6 +14,7 @@
 #import "BITabBarController.h"
 #import "BIAdapterManager.h"
 #import "BIMediator+Speech.h"
+#import "BIEmojiDetailProtocol.h"
 
 @interface BISkinController ()
 
@@ -35,9 +36,14 @@
 }
 
 - (IBAction)gotoEmojiDetail:(id)sender {
-    UIViewController *destVC = [[BIMediator sharedInstance] mediator_emojiDetailControllerWithParams:@{} completion:^{
+    UIViewController<BIEmojiDetailProtocol> *destVC = [[BIMediator sharedInstance] mediator_emojiDetailControllerWithParams:@{} completion:^{
         NSLog(@"completion");
     }];
+    
+    if ([destVC respondsToSelector:@selector(changeViewColor)]) {
+        [destVC changeViewColor];
+    }
+    
     self.tabBarController.selectedIndex = 1;
     [[BIAdapterManager currentNavigationService] pushVC:destVC animated:YES];
 }

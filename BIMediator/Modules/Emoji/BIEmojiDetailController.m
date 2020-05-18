@@ -7,8 +7,9 @@
 //
 
 #import "BIEmojiDetailController.h"
+#import "BIEmojiDetailProtocol.h"
 
-@interface BIEmojiDetailController ()
+@interface BIEmojiDetailController ()<BIEmojiDetailProtocol>
 
 @end
 
@@ -23,5 +24,9 @@
     completion();
 }
 
+#pragma mark - BIEmojiDetailProtocol
+- (void)changeViewColor {
+    self.view.backgroundColor = [UIColor redColor];
+}
 
 @end
