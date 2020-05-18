@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol BISkinDetailProtocol <NSObject>
 
+- (void)closePage;
+
 @end
 
 NS_ASSUME_NONNULL_END

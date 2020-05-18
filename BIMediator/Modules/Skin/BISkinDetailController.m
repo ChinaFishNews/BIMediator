@@ -7,8 +7,10 @@
 //
 
 #import "BISkinDetailController.h"
+#import "BISkinDetailProtocol.h"
+#import "BIAdapterManager.h"
 
-@interface BISkinDetailController ()
+@interface BISkinDetailController ()<BISkinDetailProtocol>
 
 @end
 
@@ -18,6 +20,11 @@
     [super viewDidLoad];
     self.title = @"SkinDetail";
     self.view.backgroundColor = [UIColor whiteColor];
+}
+
+#pragma mark - BISkinDetailProtocol
+- (void)closePage {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

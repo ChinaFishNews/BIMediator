@@ -14,8 +14,11 @@
 #import "BIEmojiDetailController.h"
 #import "BIAdapterManager.h"
 #import "BIMediator+Speech.h"
+#import "BISkinDetailProtocol.h"
 
 @interface BIEmojiController ()
+
+@property (nonatomic, strong) UIViewController<BISkinDetailProtocol> *skinDetailVC;
 
 @end
 
@@ -35,9 +38,15 @@
 }
 
 - (IBAction)gotoSkinDetail:(id)sender {
-    UIViewController *destVC = [[BIMediator sharedInstance] mediator_skinDetailControllerWithParams:@{}];
+    self.skinDetailVC = (UIViewController<BISkinDetailProtocol> *)[[BIMediator sharedInstance] mediator_skinDetailControllerWithParams:@{}];
     self.tabBarController.selectedIndex = 0;
-    [[BIAdapterManager currentNavigationService] pushVC:destVC animated:YES];
+    [[BIAdapterManager currentNavigationService] pushVC:self.skinDetailVC animated:YES];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if ([self.skinDetailVC respondsToSelector:@selector(closePage)]) {
+            [self.skinDetailVC closePage];
+        }
+    });
 }
 
 

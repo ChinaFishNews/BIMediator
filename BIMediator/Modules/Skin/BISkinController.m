@@ -36,7 +36,7 @@
 }
 
 - (IBAction)gotoEmojiDetail:(id)sender {
-    UIViewController<BIEmojiDetailProtocol> *destVC = [[BIMediator sharedInstance] mediator_emojiDetailControllerWithParams:@{} completion:^{
+    UIViewController<BIEmojiDetailProtocol> *destVC = (UIViewController<BIEmojiDetailProtocol> *)[[BIMediator sharedInstance] mediator_emojiDetailControllerWithParams:@{} completion:^{
         NSLog(@"completion");
     }];
     
